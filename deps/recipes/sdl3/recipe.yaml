@@ -29,7 +29,7 @@ requirements:
         - xorg-xorgproto
 
 build:
-  number: 2
+  number: 3
   script:
     - if: win
       then: python "%RECIPE_DIR%/build.py"

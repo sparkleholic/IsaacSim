@@ -91,6 +91,9 @@ def main() -> None:
             [
                 "-DSDL_X11=ON",
                 "-DSDL_X11_SHARED=ON",
+                # Host pkg-config can expose system libthai/fribidi headers the conda compiler cannot see.
+                "-DSDL_LIBTHAI=OFF",
+                "-DSDL_FRIBIDI=OFF",
                 "-DSDL_WAYLAND=OFF",
                 "-DSDL_KMSDRM=OFF",
             ]
